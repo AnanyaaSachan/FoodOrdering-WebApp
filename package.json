@@ -1,0 +1,25 @@
+{
+  "name": "react-codes",
+  "version": "1.0.0",
+  "description": "This is react codes",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnanyaaSachan/Namaste-react.git"
+  },
+  "author": "Ananya Sachan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnanyaaSachan/Namaste-react/issues"
+  },
+  "homepage": "https://github.com/AnanyaaSachan/Namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
