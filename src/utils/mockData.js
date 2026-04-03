@@ -1,58 +1,3 @@
-
- import React from "react";
- import ReactDOM from "react-dom/client";
-
- /**
-  * Header - Logo , nav bar
-  * Body - Search, retuarantContainer(restro cards)
-  * Footer - Copyright, links, address, contact
-  */
-
-const Header = () => {
-  return(
-    <div className="header">
-      <div className="logo-container">
-        <img className="logo" src="https://img.freepik.com/premium-vector/logo-food-ordering-company-with-fork-speech-bubble-logo-lunch-delivery_1107171-4500.jpg"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-  
-const RestaurantCard = (props)=>{
-  const { resData } = props;
-
-  const {
-    cloudinaryImageId,
-     name, 
-     avgRating,
-     cuisines, 
-     costForTwo,
-     deliveryTime
-    } = resData?.data;
-  return(
-    <div className="res-card">
-      <img className="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-      cloudinaryImageId}
-     />
-      <h3>{name}</h3>
-      <h4>{cuisines.join(",")}</h4>
-      <h4>{avgRating}</h4>
-      <h4>Rs.{costForTwo/100} FOR TWO</h4>
-      <h4>{deliveryTime}mins</h4>
-    </div>
-    
-  )
-}
-
 const resList = [
   {"type": "restaurant",
   "data": {
@@ -536,36 +481,229 @@ const resList = [
 
     "subtype": "basic"
   }
+  },
+  {"type": "restaurant",
+  "data": {
+    "type": "F",
+    "id": "411450",
+    "name": "Kannur food kitchen",
+    "uuid": "b12c8e3d-91aa-4c2b-8d0f-112233445566",
+    "city": "1",
+    "area": "Kerala",
+    "totalRatingsString": "100+ ratings",
+    "cloudinaryImageId": "f070323750b77547608c09a881fb2b71",
+    
+    "cuisines": [
+      "Kerala",
+      "Biryani",
+      "Beverages"
+    ],
+
+    "tags": [],
+
+    "costForTwo": 20000,
+    "costForTwoString": "₹200 FOR TWO",
+
+    "deliveryTime": 30,
+    "minDeliveryTime": 25,
+    "maxDeliveryTime": 30,
+    "slaString": "30 MINS",
+
+    "lastMileTravel": 2.8,
+
+    "slugs": {
+      "restaurant": "kannur-food-kitchen",
+      "city": "bangalore"
+    },
+
+    "cityState": "1",
+
+    "address": "Near local Kerala hub, Bangalore",
+    "locality": "Kerala Hub",
+
+    "parentId": 12345,
+
+    "unserviceable": false,
+    "veg": false,
+    "select": false,
+    "favorite": false,
+
+    "aggregatedDiscountInfo": {
+      "header": "",
+      "shortDescriptionList": [],
+      "descriptionList": [],
+      "subHeader": "",
+      "headerType": 0
+    },
+
+    "aggregatedDiscountInfoV2": {
+      "header": "",
+      "shortDescriptionList": [],
+      "descriptionList": [],
+      "subHeader": "",
+      "headerType": 0
+    },
+
+    "ribbon": [],
+
+    "chain": [],
+
+    "feeDetails": {
+      "fees": [],
+      "totalFees": 0
+    },
+
+    "availability": {
+      "opened": true
+    },
+
+    "longDistanceEnabled": 0,
+    "rainMode": "NONE",
+
+    "sla": {
+      "restaurantId": "411450",
+      "deliveryTime": 30,
+      "minDeliveryTime": 25,
+      "maxDeliveryTime": 30,
+      "lastMileTravel": 2.8,
+      "serviceability": "SERVICEABLE",
+      "rainMode": "NONE",
+      "longDistance": "NOT_LONG_DISTANCE",
+      "preferentialService": false
+    },
+
+    "avgRating": "3.8",
+    "totalRatings": 120,
+
+    "promoted": false,
+    "adTrackingID": "",
+
+    "badges": {
+      "imageBased": [],
+      "textBased": [],
+      "textExtendedBadges": []
+    },
+
+    "lastMileTravelString": "2.8 kms",
+    "hasSurge": false,
+
+    "new": false,
+    "subtype": "basic"
+  }
+  },
+  { "type": "restaurant",
+  "data": {
+    "type": "F",
+    "id": "512678",
+    "name": "Roti Wala",
+    "uuid": "c91f7a2b-55aa-4d22-9c11-778899001122",
+    "city": "1",
+    "area": "North Indian Hub",
+    "totalRatingsString": "200+ ratings",
+
+    "cloudinaryImageId": "1b0a9f247600e1ac5b1a277500ce73dd",
+
+    "cuisines": [
+      "Home Food",
+      "North Indian",
+      "Thalis"
+    ],
+
+    "tags": [],
+
+    "costForTwo": 20000,
+    "costForTwoString": "₹200 FOR TWO",
+
+    "deliveryTime": 36,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 36,
+    "slaString": "36 MINS",
+
+    "lastMileTravel": 3.2,
+
+    "slugs": {
+      "restaurant": "roti-wala",
+      "city": "bangalore"
+    },
+
+    "cityState": "1",
+
+    "address": "Near North Indian Food Street, Bangalore",
+    "locality": "Food Street",
+
+    "parentId": 22334,
+
+    "unserviceable": false,
+    "veg": true,
+    "select": false,
+    "favorite": false,
+
+    "aggregatedDiscountInfo": {
+      "header": "",
+      "shortDescriptionList": [],
+      "descriptionList": [],
+      "subHeader": "",
+      "headerType": 0
+    },
+
+    "aggregatedDiscountInfoV2": {
+      "header": "",
+      "shortDescriptionList": [],
+      "descriptionList": [],
+      "subHeader": "",
+      "headerType": 0
+    },
+
+    "ribbon": [],
+
+    "chain": [],
+
+    "feeDetails": {
+      "fees": [],
+      "totalFees": 0
+    },
+
+    "availability": {
+      "opened": true
+    },
+
+    "longDistanceEnabled": 0,
+    "rainMode": "NONE",
+
+    "sla": {
+      "restaurantId": "512678",
+      "deliveryTime": 36,
+      "minDeliveryTime": 30,
+      "maxDeliveryTime": 36,
+      "lastMileTravel": 3.2,
+      "serviceability": "SERVICEABLE",
+      "rainMode": "NONE",
+      "longDistance": "NOT_LONG_DISTANCE",
+      "preferentialService": false
+    },
+
+    "avgRating": "4.1",
+    "totalRatings": 220,
+
+    "promoted": false,
+    "adTrackingID": "",
+
+    "badges": {
+      "imageBased": [],
+      "textBased": [],
+      "textExtendedBadges": []
+    },
+
+    "lastMileTravelString": "3.2 kms",
+    "hasSurge": false,
+
+    "new": false,
+    "subtype": "basic"
+  }
   }
   
 ]
 
 
-const Body = () => {
-  return (
-    <div className="Body">
-    <div className="search">Search</div>
-    <div className="res-container">
-      { resList.map((restaurant) => (
-          <RestaurantCard key={restaurant.data.id} resData = {restaurant} />
-      ))
-      }
-     
-    </div>
-   </div> 
-  );
-};
 
-
-const AppLayout = () => {
-  return (
-  <div className="App">
-    <Header />
-    < Body />
-  </div>
-  );
-};
-
-
- const root = ReactDOM.createRoot(document.getElementById("root"));
- root.render(<AppLayout />);
+export default resList;
