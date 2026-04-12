@@ -6,6 +6,10 @@ import Shimmer from "./shimmer";
 const Body = () => {
 
  const [listOfRestaurants, setlistOfRestaurants] = useState([]);
+ const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+
+ const [searchText , setSearchText] = useState("");
+
  console.log(listOfRestaurants);
  useEffect(()=> {
      fetchData();
@@ -15,6 +19,7 @@ const Body = () => {
    const data = await fetch(
        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.421623627305543&lng=77.52531832337559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
    );
+  
    const json = await data.json();
    
    console.log(json);
@@ -25,6 +30,7 @@ const Body = () => {
     ?.gridElements?.infoWithStyle?.restaurants;
 
     setlistOfRestaurants(restaurants);
+    setFilteredRestaurant(restaurants);
  };
 
 
@@ -33,6 +39,23 @@ const Body = () => {
   ) : (                                     //ternary operator
   <div className="Body">
     <div className="filter">
+      <div className="search">
+        <input type="text" className="search-box"
+             value={searchText}
+             onChange={(e) => setSearchText(e.target.value)}
+        />
+        <button
+         className="search-btn"
+          onClick={() => {
+            const filteredRestaurant  = listOfRestaurants.filter((res) =>
+             res.info.name.toLowerCase().includes(searchText.toLowerCase())
+          );
+             setFilteredRestaurant(filteredRestaurant); 
+          }}
+        >
+        Search
+        </button>
+      </div>
       <button
         className="filer-btn"
         onClick={()=> {
@@ -46,8 +69,8 @@ const Body = () => {
       </button>
     </div>
     <div className="res-container">
-        {listOfRestaurants
-           ?.filter((res) => res?.info)   // ✅ filter valid items
+        {filteredRestaurant
+           ?.filter((res) => res?.info)  
            .map((restaurant) => (<RestaurantCard key={restaurant?.info?.id} resData={restaurant}
      />
   ))} 

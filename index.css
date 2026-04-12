@@ -72,3 +72,11 @@
     width: 70px;
     cursor: pointer;
  }
+
+ .filter {
+   display: flex;
+ }
+
+ .search-btn{
+   cursor: pointer;
+ }
