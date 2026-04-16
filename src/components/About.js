@@ -6,7 +6,7 @@ const About = () =>{
         <div>
             <h1>...About us...</h1>
 
-            <UserClass name={"Ananya Sachan (class based)"} location={"Greater Noida"} />
+            <UserClass  />
         </div>
     )
 }

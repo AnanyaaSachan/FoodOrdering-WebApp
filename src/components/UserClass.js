@@ -2,32 +2,47 @@ import React from "react";
 
 class UserClass extends React.Component {
 
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
 
         this.state = {
-             count : 0,
+            userInfo : {
+                name : "Dummy",
+                location : "Dummy",
+            },
         };
+
+    
+        console.log("constructor called")
+    }
+
+    async componentDidMount(){
+        const data = await fetch("https://api.github.com/users/AnanyaaSachan");
+        const json = await data.json();
+          
+        this.setState({
+            userInfo : json,
+        });
+    }
+
+    componentDidUpdate(){
+        console.log("Component did update");
     }
 
     render(){
-     const {name,location} = this.props;
-     const {count} = this.state;
+
+        console.log("rendered")
+
+        const {name,location,avatar_url} = this.state.userInfo;
+    
 
         return(
-        <div className="user"> 
+        <div className="user">
+             <img src={avatar_url}/>
             <h2>{name}</h2>
             <h3>{location}</h3>
             <h3>shubhi@gmail.com</h3>
-            <h3> Count: {count}</h3>
-            <button 
-              onClick={() =>{
-                 this.setState({
-                     count : this.state.count +1,
-                 });
-              }}
-             >               click
-            </button>
+           
         </div>
         )
     }
