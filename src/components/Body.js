@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 const Body = () => {
@@ -33,19 +34,28 @@ const Body = () => {
     setFilteredRestaurant(restaurants);
  };
 
+  const onlineStatus = useOnlineStatus();
+
+  if(onlineStatus === false)
+    return(
+       <h1> 
+        Looks like you are offline !! Please CHECK your connection....
+       </h1> 
+    )
+
 
   return listOfRestaurants.length === 0 ? (
    <Shimmer />  
   ) : (                                     //ternary operator
   <div className="Body">
-    <div className="filter">
+    <div className="filter flex items-center gap-4 m-4 p-4">
       <div className="search">
-        <input type="text" className="search-box"
+        <input type="text" className="border border-black px-4 py-2 rounded-md w-64 h-10"
              value={searchText}
              onChange={(e) => setSearchText(e.target.value)}
         />
-        <button
-         className="search-btn"
+        <button 
+         className="px-4 py-2 bg-green-300 rounded-lg"
           onClick={() => {
             const filteredRestaurant  = listOfRestaurants.filter((res) =>
              res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -56,19 +66,22 @@ const Body = () => {
         Search
         </button>
       </div>
-      <button
-        className="filer-btn"
+      <div >
+        <button 
+        className="filer-btn px-4 py-2 bg-green-300 rounded-lg"
         onClick={()=> {
           const filteredList = listOfRestaurants.filter(
            (res) => res?.info?.avgRating > 4.5
           );
-          setlistOfRestaurants(filteredList);
+          setFilteredRestaurant(filteredList);
         }}
       >
        Top Rated Restaurant  
       </button>
+      </div>
+      
     </div>
-    <div className="res-container">
+    <div className="res-container grid grid-cols-6 gap-6 p-6">
         {filteredRestaurant
            ?.filter((res) => res?.info)  
            .map((restaurant) => (<RestaurantCard key={restaurant?.info?.id} resData={restaurant}
