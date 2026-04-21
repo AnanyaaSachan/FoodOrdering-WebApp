@@ -1,37 +1,33 @@
+
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
-
   const resInfo = useRestaurantMenu(resId);
 
-  if (resInfo === null) return <Shimmer />;
+  if (!resInfo) return <Shimmer />;
 
-  const { name, cuisines, costForTwoMessage } =
-    resInfo?.cards[0]?.card?.card?.info;
-
-  const { itemCards } =
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
-
-  console.log(itemCards);
+  const { name, menu } = resInfo;
 
   return (
     <div className="menu">
       <h1>{name}</h1>
-      <p>
-        {cuisines.join(", ")} - {costForTwoMessage}
-      </p>
-      <h2>Menu</h2>
-      <ul>
-        {itemCards.map((item) => (
-          <li key={item.card.info.id}>
-            {item.card.info.name} -{" Rs."}
-            {item.card.info.price / 100 || item.card.info.defaultPrice / 100}
-          </li>
-        ))}
-      </ul>
+
+      {menu.map((category) => (
+        <div key={category.title}>
+          <h2>{category.title}</h2>
+
+          {category.itemCards.map((item) => (
+            <div key={item.id}>
+              <h3>{item.name}</h3>
+              <p>{item.description}</p>
+              <p>₹{item.price / 100}</p>
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };
