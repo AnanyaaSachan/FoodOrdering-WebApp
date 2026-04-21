@@ -53,4 +53,21 @@ const RestaurantCard = ({ resData }) => {
   );
 };
 
+ export const withPromotedLabel = (RestaurantCard) => {
+  return (props) => {
+    return(
+      <div className="relative"> 
+        <label className="absolute top-2 left-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">Promoted</label>
+        <RestaurantCard {...props}/>
+      </div>
+    );
+  };
+ };
+
+
+
+
+
+
+
 export default RestaurantCard;
