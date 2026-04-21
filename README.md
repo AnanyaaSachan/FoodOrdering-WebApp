@@ -1,4 +1,4 @@
-# Namste React js
+# Food Ordering web app
 
 
 /**
