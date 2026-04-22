@@ -3,12 +3,11 @@ import ItemList from "./itemList";
 
 
 
-const RestaurantCategory = ({ data }) => {
+const RestaurantCategory = ({ data,showItems,setShowIndex }) => {
 
- const [showItems, setShowItems] =useState(false);
 
  const handleClick = () => {
-    setShowItems(!showItems)
+   setShowIndex();
  };
 
   return (
@@ -17,7 +16,7 @@ const RestaurantCategory = ({ data }) => {
       {/* Header */}
       <div 
          className="flex justify-between items-center px-6 py-4 cursor-pointer hover:bg-gray-100 transition"
-        onClick={handleClick}
+         onClick={handleClick}
      >
         <span className="font-bold text-lg text-gray-800">
           {data.title} ({data.itemCards.length})
