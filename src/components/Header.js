@@ -3,6 +3,7 @@ import { useState,useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 
 
@@ -13,6 +14,8 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
 
   const {loggedInUser} = useContext(UserContext);
+
+  const cartItems = useSelector((store) => store.cart.items);
 
 
   return(
@@ -40,7 +43,7 @@ const Header = () => {
       </li>
 
       <li className="hover:text-red-500 cursor-pointer">
-        Cart
+        Cart : ({cartItems.length} items)
       </li>
 
       <li className="hover:text-red-500 cursor-pointer">

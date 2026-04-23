@@ -5,7 +5,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import { RESTAURANT_LIST_API } from "../utils/constant";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
-import User from "./User";
+
 
 const Body = () => {
 
