@@ -1,10 +1,11 @@
 import RestaurantCard, {withPromotedLabel} from "./RestaurantCard";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Shimmer from "./shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { RESTAURANT_LIST_API } from "../utils/constant";
 import { Link } from "react-router-dom";
-
+import UserContext from "../utils/UserContext";
+import User from "./User";
 
 const Body = () => {
 
@@ -15,6 +16,7 @@ const Body = () => {
 
  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
+
  console.log(listOfRestaurants);
  useEffect(()=> {
      fetchData();
@@ -24,8 +26,6 @@ const fetchData = async () => {
   try {
     const data = await fetch(RESTAURANT_LIST_API);
     const json = await data.json();
-
-    console.log("API DATA 👉", json);
 
     setListOfRestaurants(json);
     setFilteredRestaurant(json);
@@ -43,7 +43,8 @@ const fetchData = async () => {
         Looks like you are offline !! Please CHECK your connection....
        </h1> 
     )
-
+ 
+    const { loggedInUser, setUserName } = useContext(UserContext);
 
   return listOfRestaurants.length === 0 ? (
    <Shimmer />  
@@ -80,12 +81,18 @@ const fetchData = async () => {
        Top Rated Restaurant  
       </button>
       </div>
+      <div >
+        <label>Username : </label>
+        <input className="border border-black" 
+        value={loggedInUser}
+        onChange={(e) => setUserName(e.target.value)} />
+      </div>
       
     </div>
      <div className="res-container grid grid-cols-6 gap-6 p-6">
        {filteredRestaurant.map((restaurant) => {
 
-               console.log("ID 👉", restaurant?.id);
+               console.log("ID ", restaurant?.id);
 
            return (
                  <Link
