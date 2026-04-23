@@ -1,7 +1,9 @@
 import {LOGO_URL} from "../utils/constant"
-import { useState } from "react";
+import { useState,useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
+
 
 
 const Header = () => {
@@ -9,6 +11,8 @@ const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("Login");
 
   const onlineStatus = useOnlineStatus();
+
+  const {loggedInUser} = useContext(UserContext);
 
 
   return(
@@ -42,10 +46,8 @@ const Header = () => {
       <li className="hover:text-red-500 cursor-pointer">
         <Link to="/grocery">Grocery</Link>
       </li>
-
-
-      
-          <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition"
+     
+        <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition"
            onClick={() => {
              btnNameReact === "Login" 
              ? setBtnNameReact("Logout") 
@@ -54,6 +56,11 @@ const Header = () => {
           >
             {btnNameReact}
           </button>
+         <li className="hover:text-red-500 cursor-pointer">
+           {loggedInUser}
+         </li>
+
+
         </ul>
       </div>
     </div>

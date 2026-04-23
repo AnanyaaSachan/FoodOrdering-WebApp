@@ -1,7 +1,12 @@
 import { CDN_URL } from "../utils/constant";
 import { Link } from "react-router-dom";
+import UserContext from "../utils/UserContext";
+import { useContext } from "react";
+
 
 const RestaurantCard = ({ resData }) => {
+
+  const {loggedInUser} = useContext(UserContext);
 
   if (!resData) return null;
 
@@ -48,7 +53,10 @@ const RestaurantCard = ({ resData }) => {
       <h4 className="text-sm text-gray-500">
         {deliveryTime} mins
       </h4>
-
+       
+        <h4 className="text-sm text-gray-500">
+        {loggedInUser}
+        </h4>
     </div>
   );
 };
