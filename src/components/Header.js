@@ -43,7 +43,7 @@ const Header = () => {
       </li>
 
       <li className="hover:text-red-500 cursor-pointer">
-        Cart : ({cartItems.length} items)
+        <Link to="/Cart">Cart : ({cartItems.length} items)</Link>
       </li>
 
       <li className="hover:text-red-500 cursor-pointer">

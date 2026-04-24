@@ -13,6 +13,7 @@
  import UserContext from "./utils/UserContext";
  import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 
 
 const AppLayout = () => {
@@ -64,6 +65,11 @@ const appRouter = createBrowserRouter([
          path: "/Grocery",
          element: <Suspense fallback={<h1>Loading...</h1>}><Grocery/></Suspense>,
       },
+      {
+         path: "/Cart",
+         element: < Cart />,
+      },
+      
        
     ],
     errorElement: < Error />,
