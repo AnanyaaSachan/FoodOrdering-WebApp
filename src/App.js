@@ -13,7 +13,7 @@
  import UserContext from "./utils/UserContext";
  import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
-import Cart from "./components/Cart";
+import Cart  from "./components/Cart";
 
 
 const AppLayout = () => {
