@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777131805506" clover="3.2.0">
-  <project timestamp="1777131805506" name="All files">
-    <metrics statements="30" coveredstatements="25" conditionals="4" coveredconditionals="2" methods="12" coveredmethods="7" elements="46" coveredelements="34" complexity="0" loc="30" ncloc="30" packages="2" files="8" classes="8"/>
+<coverage generated="1777293349531" clover="3.2.0">
+  <project timestamp="1777293349532" name="All files">
+    <metrics statements="39" coveredstatements="33" conditionals="10" coveredconditionals="5" methods="16" coveredmethods="10" elements="65" coveredelements="48" complexity="0" loc="39" ncloc="39" packages="2" files="9" classes="9"/>
     <package name="components">
-      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <metrics statements="20" coveredstatements="19" conditionals="10" coveredconditionals="5" methods="9" coveredmethods="8"/>
       <file name="Contact.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\components\Contact.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -12,12 +12,24 @@
       <file name="Header.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\components\Header.js">
         <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="10" count="1" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-        <line num="18" count="9" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
-        <line num="55" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="55" count="2" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="RestaurantCard.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\components\RestaurantCard.js">
+        <metrics statements="9" coveredstatements="8" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="3"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
       </file>
       <file name="sum.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\components\sum.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -29,7 +41,7 @@
       <metrics statements="19" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="2"/>
       <file name="UserContext.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\utils\UserContext.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
       </file>
       <file name="appStore.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\utils\appStore.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -45,21 +57,21 @@
       </file>
       <file name="constant.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\utils\constant.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
       </file>
       <file name="useOnlineStatus.js" path="C:\Users\Ananya Sachan\Desktop\react codes\src\utils\useOnlineStatus.js">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="17" count="5" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
       </file>
     </package>
   </project>

@@ -1,0 +1,18 @@
+{
+    "name": "Pizza Paradise",
+    "cloudinaryImageId": "https://tse3.mm.bing.net/th/id/OIP.8UeIFPMYwIErE1ShRYB9QAHaEo?pid=Api&P=0&h=180",
+    "locality": "MG Road",
+    "areaName": "Central District",
+    "costForTwo": "₹400 for two",
+    "cuisines": "Pizza, Italian, Fast Food",
+    "avgRating": 4.3,
+    "totalRatingsString": "10K+ ratings",
+    "promoted": true,
+    "veg": false,
+    "deliveryTime": 30,
+    "aggregatedDiscountInfoV3": {
+      "header": "50% OFF",
+      "subHeader": "UPTO ₹100"
+    },
+    "id": "1"
+  }
