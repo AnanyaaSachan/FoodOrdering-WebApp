@@ -21,7 +21,7 @@ const RestaurantCard = ({ resData }) => {
   } = resData;
 
   return (
-    <div className="res-card p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+    <div data-testid = "resCard" className="res-card p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
 
       <img
         className="res-logo w-full h-40 object-cover rounded-md"

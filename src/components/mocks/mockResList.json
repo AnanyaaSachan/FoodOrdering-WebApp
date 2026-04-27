@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Pizza Paradise",
+    "cloudinaryImageId": "https://tse3.mm.bing.net/th/id/OIP.8UeIFPMYwIErE1ShRYB9QAHaEo?pid=Api&P=0&h=180",
+    "locality": "MG Road",
+    "areaName": "Central District",
+    "costForTwo": "₹400 for two",
+    "cuisines": "Pizza, Italian, Fast Food",
+    "avgRating": 4.3,
+    "totalRatingsString": "10K+ ratings",
+    "promoted": true,
+    "veg": false,
+    "deliveryTime": 30,
+    "aggregatedDiscountInfoV3": {
+      "header": "50% OFF",
+      "subHeader": "UPTO ₹100"
+    },
+    "id": "1"
+  },
+  {
+    "name": "Burger Hub",
+    "cloudinaryImageId": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+    "locality": "Sector 18",
+    "areaName": "Noida",
+    "costForTwo": "₹300 for two",
+    "cuisines": "Burger, Fast Food",
+    "avgRating": 4.1,
+    "totalRatingsString": "5K+ ratings",
+    "promoted": false,
+    "veg": false,
+    "deliveryTime": 25,
+    "aggregatedDiscountInfoV3": {
+      "header": "30% OFF",
+      "subHeader": "UPTO ₹75"
+    },
+    "id": "2"
+  },
+  {
+    "name": "Chinese Dragon",
+    "cloudinaryImageId": "https://tse1.mm.bing.net/th/id/OIP.HX_dhk-SWv9mty6WhSYaXAHaEK?pid=Api&rs=1&c=1&qlt=95&w=164&h=92",
+    "locality": "Karol Bagh",
+    "areaName": "Delhi",
+    "costForTwo": "₹350 for two",
+    "cuisines": "Chinese, Asian, Noodles",
+    "avgRating": 4,
+    "totalRatingsString": "6K+ ratings",
+    "promoted": true,
+    "veg": false,
+    "deliveryTime": 28,
+    "aggregatedDiscountInfoV3": {
+      "header": "20% OFF",
+      "subHeader": "UPTO ₹80"
+    },
+    "id": "3"
+  },
+  {
+    "name": "Green Bites",
+    "cloudinaryImageId": "https://tse3.mm.bing.net/th/id/OIP.p1TG0B8VcrOdfB7pl3ubywHaEK?pid=Api&P=0&h=180",
+    "locality": "Sector 62",
+    "areaName": "Noida",
+    "costForTwo": "₹250 for two",
+    "cuisines": "Healthy, Salads, Vegan",
+    "avgRating": 4.2,
+    "totalRatingsString": "3K+ ratings",
+    "promoted": false,
+    "veg": true,
+    "deliveryTime": 22,
+    "aggregatedDiscountInfoV3": {
+      "header": "15% OFF",
+      "subHeader": "UPTO ₹50"
+    },
+    "id": "4"
+  },
+  {
+    "name": "Spice Kingdom",
+    "cloudinaryImageId": "https://tse1.mm.bing.net/th/id/OIP.pJDBhr11bu7vpIqXPqU8OwHaEK?pid=Api&rs=1&c=1&qlt=95&w=219&h=122",
+    "locality": "Connaught Place",
+    "areaName": "Delhi",
+    "costForTwo": "₹500 for two",
+    "cuisines": "Indian, Biryani, Mughlai",
+    "avgRating": 4.5,
+    "totalRatingsString": "8K+ ratings",
+    "promoted": true,
+    "veg": false,
+    "deliveryTime": 35,
+    "aggregatedDiscountInfoV3": {
+      "header": "40% OFF",
+      "subHeader": "UPTO ₹120"
+    },
+    "id": "5"
+  },
+  {
+    "name": "Dessert Delight",
+    "cloudinaryImageId": "https://tse1.mm.bing.net/th/id/OIP.XCLnV1aFJpgNPtmXt7xIAQHaEK?pid=Api&rs=1&c=1&qlt=95&w=197&h=110",
+    "locality": "Saket",
+    "areaName": "Delhi",
+    "costForTwo": "₹200 for two",
+    "cuisines": "Desserts, Ice Cream",
+    "avgRating": 4.4,
+    "totalRatingsString": "4K+ ratings",
+    "promoted": false,
+    "veg": true,
+    "deliveryTime": 20,
+    "aggregatedDiscountInfoV3": {
+      "header": "10% OFF",
+      "subHeader": "UPTO ₹40"
+    },
+    "id": "6"
+  },
+  {
+    "name": "Sushi Station",
+    "cloudinaryImageId": "https://tse1.mm.bing.net/th/id/OIP.eglmj4IrEmbDXswB3C0y6AHaE8?pid=Api&rs=1&c=1&qlt=95&w=159&h=106",
+    "locality": "Cyber Hub",
+    "areaName": "Gurgaon",
+    "costForTwo": "₹800 for two",
+    "cuisines": "Japanese, Sushi",
+    "avgRating": 4.6,
+    "totalRatingsString": "9K+ ratings",
+    "promoted": true,
+    "veg": false,
+    "deliveryTime": 40,
+    "aggregatedDiscountInfoV3": {
+      "header": "25% OFF",
+      "subHeader": "UPTO ₹150"
+    },
+    "id": "7"
+  },
+  {
+    "name": "Taco Fiesta",
+    "cloudinaryImageId": "https://tse1.mm.bing.net/th/id/OIP.Njy-lLsZNZEOaPu-sKcysAHaE8?pid=Api&rs=1&c=1&qlt=95&h=180",
+    "locality": "Sector 29",
+    "areaName": "Gurgaon",
+    "costForTwo": "₹350 for two",
+    "cuisines": "Mexican, Fast Food",
+    "avgRating": 4.2,
+    "totalRatingsString": "4K+ ratings",
+    "promoted": false,
+    "veg": false,
+    "deliveryTime": 27,
+    "aggregatedDiscountInfoV3": {
+      "header": "20% OFF",
+      "subHeader": "UPTO ₹70"
+    },
+    "id": "8"
+  },
+  {
+    "name": "Pasta Palace",
+    "cloudinaryImageId": "https://tse1.mm.bing.net/th/id/OIP.u6w9OLazvtbr1PXYZMV_DQHaHa?pid=Api&rs=1&c=1&qlt=95&w=102&h=102",
+    "locality": "Rajouri Garden",
+    "areaName": "Delhi",
+    "costForTwo": "₹450 for two",
+    "cuisines": "Italian, Pasta",
+    "avgRating": 4.3,
+    "totalRatingsString": "6K+ ratings",
+    "promoted": true,
+    "veg": true,
+    "deliveryTime": 30,
+    "aggregatedDiscountInfoV3": {
+      "header": "35% OFF",
+      "subHeader": "UPTO ₹100"
+    },
+    "id": "9"
+  },
+  {
+    "name": "BBQ Nation",
+    "cloudinaryImageId": "https://tse1.mm.bing.net/th/id/OIP.wcIx4DL6wDmbFJke1xPYzwHaD4?pid=Api&rs=1&c=1&qlt=95&w=230&h=120",
+    "locality": "Vasant Kunj",
+    "areaName": "Delhi",
+    "costForTwo": "₹600 for two",
+    "cuisines": "BBQ, Grilled",
+    "avgRating": 4.4,
+    "totalRatingsString": "7K+ ratings",
+    "promoted": true,
+    "veg": false,
+    "deliveryTime": 38,
+    "aggregatedDiscountInfoV3": {
+      "header": "40% OFF",
+      "subHeader": "UPTO ₹120"
+    },
+    "id": "10"
+  },
+  {
+    "name": "Sandwich Corner",
+    "cloudinaryImageId": "https://tse4.mm.bing.net/th/id/OIP.vawTyGKUP1fMoXRSJONugAHaE1?pid=Api&P=0&h=180",
+    "locality": "Lajpat Nagar",
+    "areaName": "Delhi",
+    "costForTwo": "₹200 for two",
+    "cuisines": "Sandwich, Fast Food",
+    "avgRating": 4,
+    "totalRatingsString": "3K+ ratings",
+    "promoted": false,
+    "veg": true,
+    "deliveryTime": 18,
+    "aggregatedDiscountInfoV3": {
+      "header": "10% OFF",
+      "subHeader": "UPTO ₹40"
+    },
+    "id": "11"
+  },
+  {
+    "name": "Noodle House",
+    "cloudinaryImageId": "https://tse4.mm.bing.net/th/id/OIP.bAi4BAmtk6OyVLcGA1fu0wHaHa?pid=Api&P=0&h=180",
+    "locality": "Dwarka",
+    "areaName": "Delhi",
+    "costForTwo": "₹300 for two",
+    "cuisines": "Chinese, Noodles",
+    "avgRating": 4.1,
+    "totalRatingsString": "4K+ ratings",
+    "promoted": false,
+    "veg": false,
+    "deliveryTime": 26,
+    "aggregatedDiscountInfoV3": {
+      "header": "15% OFF",
+      "subHeader": "UPTO ₹60"
+    },
+    "id": "12"
+  },
+  {
+    "name": "Donut World",
+    "cloudinaryImageId": "https://tse3.mm.bing.net/th/id/OIP.52C51sjGZBVHSgbTF9wxewHaGr?pid=Api&P=0&w=300&h=300",
+    "locality": "Janakpuri",
+    "areaName": "Delhi",
+    "costForTwo": "₹150 for two",
+    "cuisines": "Desserts, Bakery",
+    "avgRating": 4.3,
+    "totalRatingsString": "2K+ ratings",
+    "promoted": true,
+    "veg": true,
+    "deliveryTime": 15,
+    "aggregatedDiscountInfoV3": {
+      "header": "20% OFF",
+      "subHeader": "UPTO ₹50"
+    },
+    "id": "13"
+  },
+  {
+    "name": "Italiano Express",
+    "cloudinaryImageId": "https://tse3.mm.bing.net/th/id/OIP.Jpq8v_sA3d_gsBt8RD2K_AHaEK?pid=Api&P=0&w=300&h=300",
+    "locality": "Noida Sector 50",
+    "areaName": "Noida",
+    "costForTwo": "₹500 for two",
+    "cuisines": "Italian, Pizza, Pasta",
+    "avgRating": 4.4,
+    "totalRatingsString": "5K+ ratings",
+    "promoted": true,
+    "veg": false,
+    "deliveryTime": 32,
+    "aggregatedDiscountInfoV3": {
+      "header": "30% OFF",
+      "subHeader": "UPTO ₹100"
+    },
+    "id": "14"
+  }
+]

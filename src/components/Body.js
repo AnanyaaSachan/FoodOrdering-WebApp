@@ -52,7 +52,9 @@ const fetchData = async () => {
   <div className="Body">
     <div className="filter flex items-center gap-4 m-4 p-4">
       <div className="search">
-        <input type="text" className="border border-black px-4 py-2 rounded-md w-64 h-10"
+        <input type="text"
+             data-testid = "searchInput"
+             className="border border-black px-4 py-2 rounded-md w-64 h-10"
              value={searchText}
              onChange={(e) => setSearchText(e.target.value)}
         />
@@ -85,7 +87,8 @@ const fetchData = async () => {
         <label>Username : </label>
         <input className="border border-black" 
         value={loggedInUser}
-        onChange={(e) => setUserName(e.target.value)} />
+        onChange={(e) => setUserName(e.target.value)}
+         />
       </div>
       
     </div>
